@@ -1,83 +1,298 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
       <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
+        <v-card-title>
+          所属ルーム一覧
         </v-card-title>
         <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
+          <v-list>
+
+
+            <v-list-item link
             >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>Zliルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
             >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-flower
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
             >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+
+
+
+            <v-list-item link
+            >
+              <v-list-item-avatar>
+                <v-icon
+                  class="grey lighten-1"
+                  dark
+                >
+                mdi-cat
+                </v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
+              </v-list-item-content>
+
+              <v-list-item-action>
+                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
+              </v-list-item-action>
+            </v-list-item>
+          </v-list>
         </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
       </v-card>
     </v-col>
+    <v-btn
+            dark
+            fixed
+            bottom
+            right
+            color="primary"
+            style="z-index: 5;"
+            to="/new-room"
+          >
+            ルームを作成
+            <v-icon>mdi-plus</v-icon>
+    </v-btn>
   </v-row>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  layout: 'app'
 }
 </script>
