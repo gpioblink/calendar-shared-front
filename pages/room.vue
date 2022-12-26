@@ -1,6 +1,6 @@
 <template>
     <v-row justify="center">
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" md="4">
         <v-card>
           <v-card-title>
             ルームのメンバー
@@ -111,7 +111,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="12" md="8">
+      <v-col cols="12" md="8">
         <v-card>
           <v-card-title>
             あなたが共有中のカレンダー
