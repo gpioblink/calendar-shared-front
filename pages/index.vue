@@ -1,292 +1,94 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+  <v-row justify="center">
+    <v-col cols="12">
+      <v-card>
+        <v-card-title>〇〇さん、みんなのカレンダーへようこそ！</v-card-title>
+        <v-card-subtitle>
+          <p>今日はどんな予定を立てますか？ 「所属ルーム」から、予定を調整したい団体を選んで、開始ボタンを押してください。</p>
+        </v-card-subtitle>
+      </v-card>
+    </v-col>
+
+
+    <v-col cols="12" md="6">
       <v-card>
         <v-card-title>
-          所属ルーム一覧
+          所属ルーム
         </v-card-title>
+        <v-card-subtitle>
+          
+          <div align="left">
+            <v-btn
+                color="secondary"
+                outlined
+              >
+                <v-icon>mdi-plus</v-icon>
+                ルーム作成
+            </v-btn>
+
+            <v-btn
+                color="secondary"
+                outlined
+              >
+                <v-icon>mdi-plus</v-icon>
+                招待コードから参加
+            </v-btn>
+
+          </div>
+        </v-card-subtitle>
         <v-card-text>
-          <v-list>
-
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>Zliルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-flower
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
-
-
-
-
-            <v-list-item link
-            >
-              <v-list-item-avatar>
-                <v-icon
-                  class="grey lighten-1"
-                  dark
-                >
-                mdi-cat
-                </v-icon>
-              </v-list-item-avatar>
-
-              <v-list-item-content>
-                <v-list-item-title>基板設計勉強会ルーム</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                  <v-btn icon><v-icon>mdi-calendar-plus</v-icon></v-btn>
-              </v-list-item-action>
-            </v-list-item>
+          カレンダーアイコンを押すと予定の調整を開始します。
+          <v-list>            
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />  
+            <ListItemRoom />
           </v-list>
         </v-card-text>
       </v-card>
     </v-col>
-    <v-btn
-            dark
-            fixed
-            bottom
-            right
-            color="primary"
-            style="z-index: 5;"
-            to="/new-room"
-          >
-            ルームを作成
-            <v-icon>mdi-plus</v-icon>
-    </v-btn>
+
+    <v-col cols="12" md="6">
+      <v-card>
+        <v-card-title>
+          登録済みカレンダー
+        </v-card-title>
+        <v-card-subtitle>
+          <div align="left">
+            <v-btn
+                color="secondary"
+                outlined
+              >
+                <v-icon>mdi-plus</v-icon>
+                カレンダーの追加
+            </v-btn>
+          </div>
+        </v-card-subtitle>
+        <v-card-text>
+          デフォルトの公開範囲の設定が行えます。
+          <v-list>            
+            <ListItemCalenderPermission />
+            <ListItemCalenderPermission />
+            <ListItemCalenderPermission />
+            <ListItemCalenderPermission />
+            <ListItemCalenderPermission />
+            <ListItemCalenderPermission />
+            <ListItemCalenderPermission />
+            <ListItemCalenderPermission />
+          </v-list>
+        </v-card-text>
+      </v-card>
+    </v-col>
   </v-row>
 </template>
 

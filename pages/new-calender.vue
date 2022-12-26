@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" xs5>
-      ルームの新規作成
+      カレンダーの追加
     </v-col>
     <v-col cols="12">
       <v-stepper v-model="e1">
@@ -10,7 +10,7 @@
             :complete="e1 > 1"
             step="1"
           >
-            ルーム情報の入力
+            取得方法の入力
           </v-stepper-step>
 
           <v-divider></v-divider>
@@ -19,7 +19,7 @@
             :complete="e1 > 2"
             step="2"
           >
-            共有範囲の設定
+            カレンダー連携
           </v-stepper-step>
 
           <v-divider></v-divider>
@@ -28,7 +28,7 @@
             :complete="e1 > 2"
             step="3"
           >
-            友達を招待
+            取得内容の確認
           </v-stepper-step>
         </v-stepper-header>
 
@@ -80,7 +80,7 @@
 
             <v-btn
               color="primary"
-              to="/"
+              to="/room"
             >
               完了
             </v-btn>

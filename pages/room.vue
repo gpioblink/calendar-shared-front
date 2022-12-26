@@ -7,106 +7,13 @@
           </v-card-title>
           <v-card-text>
             <v-list>
-              <v-list-item
-              >
-                <v-list-item-avatar>
-                  <v-icon
-                    class="grey lighten-1"
-                    dark
-                  >
-                  mdi-account
-                  </v-icon>
-                </v-list-item-avatar>
-  
-                <v-list-item-content>
-                  <v-list-item-title>じぶりん</v-list-item-title>
-                </v-list-item-content>
-  
-                <v-list-item-action>
-                    <v-btn icon><v-icon>mdi-cancel</v-icon></v-btn>
-                </v-list-item-action>
-              </v-list-item>
-
-              <v-list-item
-              >
-                <v-list-item-avatar>
-                  <v-icon
-                    class="grey lighten-1"
-                    dark
-                  >
-                  mdi-account
-                  </v-icon>
-                </v-list-item-avatar>
-  
-                <v-list-item-content>
-                  <v-list-item-title>npJxx</v-list-item-title>
-                </v-list-item-content>
-  
-                <v-list-item-action>
-                    <v-btn icon><v-icon>mdi-cancel</v-icon></v-btn>
-                </v-list-item-action>
-              </v-list-item>
-
-              <v-list-item
-              >
-                <v-list-item-avatar>
-                  <v-icon
-                    class="grey lighten-1"
-                    dark
-                  >
-                  mdi-account
-                  </v-icon>
-                </v-list-item-avatar>
-  
-                <v-list-item-content>
-                  <v-list-item-title>kashu</v-list-item-title>
-                </v-list-item-content>
-  
-                <v-list-item-action>
-                    <v-btn icon><v-icon>mdi-cancel</v-icon></v-btn>
-                </v-list-item-action>
-              </v-list-item>
-
-              <v-list-item
-              >
-                <v-list-item-avatar>
-                  <v-icon
-                    class="grey lighten-1"
-                    dark
-                  >
-                  mdi-account
-                  </v-icon>
-                </v-list-item-avatar>
-  
-                <v-list-item-content>
-                  <v-list-item-title>sou7</v-list-item-title>
-                </v-list-item-content>
-  
-                <v-list-item-action>
-                    <v-btn icon><v-icon>mdi-cancel</v-icon></v-btn>
-                </v-list-item-action>
-              </v-list-item>
-
-              <v-list-item
-              >
-                <v-list-item-avatar>
-                  <v-icon
-                    class="grey lighten-1"
-                    dark
-                  >
-                  mdi-account
-                  </v-icon>
-                </v-list-item-avatar>
-  
-                <v-list-item-content>
-                  <v-list-item-title>tashiro</v-list-item-title>
-                </v-list-item-content>
-  
-                <v-list-item-action>
-                    <v-btn icon><v-icon>mdi-cancel</v-icon></v-btn>
-                </v-list-item-action>
-              </v-list-item>
-  
+              <ListItemRoomMember />
+              <ListItemRoomMember />
+              <ListItemRoomMember />
+              <ListItemRoomMember />
+              <ListItemRoomMember />
+              <ListItemRoomMember />
+              <ListItemRoomMember />
             </v-list>
           </v-card-text>
         </v-card>
@@ -118,10 +25,10 @@
           </v-card-title>
           <v-card-text>
             <v-list>
-              <CalenderPermissionSelectorItem />
-              <CalenderPermissionSelectorItem />
-              <CalenderPermissionSelectorItem />
-              <CalenderPermissionSelectorItem />
+              <ListItemCalenderPermission />
+              <ListItemCalenderPermission />
+              <ListItemCalenderPermission />
+              <ListItemCalenderPermission />
             </v-list>
           </v-card-text>
         </v-card>
@@ -134,7 +41,7 @@
               right
               color="primary"
               style="z-index: 5;"
-              to="/new-room"
+              to="/new-calender"
             >
               <v-icon>mdi-calendar</v-icon>
               予定の調整を開始
