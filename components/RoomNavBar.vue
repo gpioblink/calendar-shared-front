@@ -3,6 +3,7 @@
         <v-btn
               icon
               class="hidden-xs-only"
+              to="/"
             >
               <v-icon>mdi-arrow-left</v-icon>
         </v-btn>

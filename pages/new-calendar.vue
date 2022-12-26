@@ -80,7 +80,7 @@
 
             <v-btn
               color="primary"
-              to="/room"
+              to="/"
             >
               完了
             </v-btn>

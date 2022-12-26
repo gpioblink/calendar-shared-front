@@ -41,7 +41,6 @@
               right
               color="primary"
               style="z-index: 5;"
-              to="/new-calender"
             >
               <v-icon>mdi-calendar</v-icon>
               予定の調整を開始

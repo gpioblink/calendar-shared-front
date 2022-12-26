@@ -21,6 +21,7 @@
             <v-btn
                 color="secondary"
                 outlined
+                to="/new-room"
               >
                 <v-icon>mdi-plus</v-icon>
                 ルーム作成
@@ -68,6 +69,7 @@
             <v-btn
                 color="secondary"
                 outlined
+                to="/new-calendar"
               >
                 <v-icon>mdi-plus</v-icon>
                 カレンダーの追加
