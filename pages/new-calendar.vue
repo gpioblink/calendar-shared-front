@@ -34,18 +34,57 @@
 
         <v-stepper-items>
           <v-stepper-content step="1">
-            <v-card
-              class="mb-12"
-              color="grey lighten-1"
-              height="200px"
-            ></v-card>
 
-            <v-btn
-              color="primary"
-              @click="e1 = 2"
-            >
-              次へ
-            </v-btn>
+            <p>追加したいカレンダーのあるサービスを選択してください。</p>
+
+            <div class="text-center">
+              <div class="my-5">
+                <v-btn
+                  block
+                  x-large
+                  style="text-transform: none"
+                  @click="e1 = 2"
+                >
+                  <v-icon left light>mdi-google</v-icon> Google Calendar から追加
+                </v-btn>
+              </div>
+              <div class="my-5">
+                <v-btn
+                  block
+                  x-large
+                  style="text-transform: none"
+                  @click="e1 = 2"
+                >
+                <v-icon left light>mdi-apple</v-icon> iCloud Calendar から追加
+                </v-btn>
+              </div>
+              <div class="my-5">
+                <v-btn
+                  block
+                  x-large
+                  style="text-transform: none"
+                  @click="e1 = 2"
+                >
+                <v-icon left light>mdi-microsoft</v-icon> Outlook Calendar から追加
+                </v-btn>
+              </div>
+              <div class="my-5">
+                <v-divider></v-divider>
+              </div>
+              <div class="my-5">
+                <v-btn
+                  block
+                  x-large
+                  style="text-transform: none"
+                  @click="e1 = 2"
+                >
+                  icalのURLから手動で追加
+                </v-btn>
+              </div>
+              <div class="my-5">
+                利用したいサービスが一覧にない場合、ical形式のURLを用いたカレンダーの手動追加をお試しください。
+              </div>
+            </div>
 
             <v-btn text>
               キャンセル
@@ -53,11 +92,23 @@
           </v-stepper-content>
 
           <v-stepper-content step="2">
-            <v-card
-              class="mb-12"
-              color="grey lighten-1"
-              height="200px"
-            ></v-card>
+            <p>以下のカレンダーが見つかりました。必要なカレンダーを選択してください。</p>
+
+            <div class="my-5">
+              <v-list>
+                <v-list-item>
+                  <v-list-item-avatar>
+                    <v-icon left>mdi-calendar</v-icon>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title>ほげほげカレンダー</v-list-item-title>
+                  </v-list-item-content>
+                  <v-list-item-action>
+                    <v-checkbox></v-checkbox>
+                  </v-list-item-action>
+                </v-list-item>
+              </v-list>
+            </div>
 
             <v-btn
               color="primary"
@@ -72,11 +123,15 @@
           </v-stepper-content>
 
           <v-stepper-content step="3">
-            <v-card
-              class="mb-12"
-              color="grey lighten-1"
-              height="200px"
-            ></v-card>
+            <p>選択されたカレンダーのデフォルトの権限設定を行ってください。</p>
+
+            <div class="my-5">
+              <v-list>
+                <ListItemCalenderPermission />
+                <ListItemCalenderPermission />
+                <ListItemCalenderPermission />
+              </v-list>
+            </div>
 
             <v-btn
               color="primary"
@@ -93,7 +148,7 @@
 
 <script>
 export default {
-  name: 'NewRoomPage',
+  name: 'NewCalendarPage',
   layout: 'app',
   data () {
       return {
