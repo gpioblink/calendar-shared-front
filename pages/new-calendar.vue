@@ -19,7 +19,7 @@
             :complete="e1 > 2"
             step="2"
           >
-            カレンダー連携
+            連携カレンダーの選択
           </v-stepper-step>
 
           <v-divider></v-divider>
@@ -28,7 +28,7 @@
             :complete="e1 > 2"
             step="3"
           >
-            取得内容の確認
+            権限設定
           </v-stepper-step>
         </v-stepper-header>
 
@@ -95,19 +95,26 @@
             <p>以下のカレンダーが見つかりました。必要なカレンダーを選択してください。</p>
 
             <div class="my-5">
-              <v-list>
-                <v-list-item>
-                  <v-list-item-avatar>
-                    <v-icon left>mdi-calendar</v-icon>
-                  </v-list-item-avatar>
-                  <v-list-item-content>
-                    <v-list-item-title>ほげほげカレンダー</v-list-item-title>
-                  </v-list-item-content>
-                  <v-list-item-action>
-                    <v-checkbox></v-checkbox>
-                  </v-list-item-action>
-                </v-list-item>
-              </v-list>
+              <v-list-item-group
+                multiple
+                active-class=""
+              >
+                <v-list>
+                  <v-list-item>
+                    <template v-slot:default="{ active }">
+                      <v-list-item-avatar>
+                        <v-icon left>mdi-calendar</v-icon>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title>ほげほげカレンダー</v-list-item-title>
+                      </v-list-item-content>
+                      <v-list-item-action>
+                        <v-checkbox :input-value="active"></v-checkbox>
+                      </v-list-item-action>
+                    </template>
+                  </v-list-item>
+                </v-list>
+              </v-list-item-group>
             </div>
 
             <v-btn
