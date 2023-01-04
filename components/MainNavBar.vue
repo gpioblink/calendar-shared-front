@@ -45,17 +45,18 @@
                     <v-btn
                       depressed
                       text
+                      to="/user/integration"
                     >
                       アカウント連携設定
                     </v-btn>
                     <v-divider class="my-3"></v-divider>
-                    <v-btn
+                    <!-- <v-btn
                       depressed
                       text
                     >
                       ユーザー設定
                     </v-btn>
-                    <v-divider class="my-3"></v-divider>
+                    <v-divider class="my-3"></v-divider> -->
                     <v-btn
                       depressed
                       text
