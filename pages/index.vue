@@ -30,6 +30,7 @@
             <v-btn
                 color="secondary"
                 outlined
+                to="/join-room"
               >
                 <v-icon>mdi-plus</v-icon>
                 招待コードから参加

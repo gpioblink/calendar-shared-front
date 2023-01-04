@@ -10,7 +10,7 @@
             :complete="e1 > 1"
             step="1"
           >
-            ルーム情報の確認
+            ルームの入力
           </v-stepper-step>
 
           <v-divider></v-divider>
@@ -19,26 +19,36 @@
             :complete="e1 > 2"
             step="2"
           >
-            共有範囲の設定
+            情報の確認
           </v-stepper-step>
 
           <v-divider></v-divider>
 
           <v-stepper-step
-            :complete="e1 > 2"
+            :complete="e1 > 3"
             step="3"
+          >
+            権限設定
+          </v-stepper-step>
+
+          <v-divider></v-divider>
+
+          <v-stepper-step
+            :complete="e1 > 3"
+            step="4"
           >
             承認待ち
           </v-stepper-step>
+
         </v-stepper-header>
 
         <v-stepper-items>
           <v-stepper-content step="1">
-            <v-card
-              class="mb-12"
-              color="grey lighten-1"
-              height="200px"
-            ></v-card>
+
+            ルームの管理者から提示されたルームIDを入力してください。
+            <v-text-field
+              label="ルームID"
+            ></v-text-field>
 
             <v-btn
               color="primary"
@@ -53,11 +63,28 @@
           </v-stepper-content>
 
           <v-stepper-content step="2">
+
+            あなたは以下のルームに招待されています。参加しますか？
+
             <v-card
-              class="mb-12"
-              color="grey lighten-1"
-              height="200px"
-            ></v-card>
+              class="my-8"
+              outlined
+            >
+              <v-row>
+                <v-col>
+                  <div class="text-center my-5">
+                    <v-avatar
+                      color="yellow darken-3"
+                      size="100"
+                    >
+                      <v-icon x-large dark>mdi-door-closed</v-icon>
+                    </v-avatar>
+                    <p class="my-7 mx-10 text-h5">あああルーム</p>
+                    <p class="my-7 mx-12 text-subtitle-1">説明あああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                  </div>
+                </v-col>
+              </v-row>          
+            </v-card>
 
             <v-btn
               color="primary"
@@ -72,15 +99,34 @@
           </v-stepper-content>
 
           <v-stepper-content step="3">
-            <v-card
-              class="mb-12"
-              color="grey lighten-1"
-              height="200px"
-            ></v-card>
+            〇〇ルームで共有するカレンダーの権限を設定してください。
+
+            <div class="my-5">
+              <v-list>
+                <ListItemCalenderPermission />
+                <ListItemCalenderPermission />
+                <ListItemCalenderPermission />
+              </v-list>
+            </div>
 
             <v-btn
               color="primary"
-              @click="e1 = 1"
+              @click="e1 = 4"
+            >
+              次へ
+            </v-btn>
+
+            <v-btn text>
+              キャンセル
+            </v-btn>
+          </v-stepper-content>
+
+          <v-stepper-content step="4">
+            <p>〇〇ルームへの参加申請が完了しました。申請がルームの管理者に許可されると、カレンダーにアクセスできるようになります。</p>
+
+            <v-btn
+              color="primary"
+              to="/"
             >
               完了
             </v-btn>
