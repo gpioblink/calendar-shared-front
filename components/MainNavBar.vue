@@ -2,12 +2,65 @@
     <v-toolbar>
         <v-toolbar-title @click="$router.push('/')" style="cursor:pointer">みんなのカレンダー</v-toolbar-title>
         <v-spacer></v-spacer>
-            <v-avatar>
+            <!-- <v-avatar>
                 <img
                     src="https://cdn.vuetifyjs.com/images/john.jpg"
                     alt="John"
                 >
-            </v-avatar>
+            </v-avatar> -->
+            <v-menu
+              bottom
+              min-width="200px"
+              rounded
+              offset-y
+            >
+              <template v-slot:activator="{ on }">
+                <v-btn
+                  icon
+                  x-large
+                  v-on="on"
+                >
+                  <v-avatar
+                    >
+                    <img
+                      src="https://cdn.vuetifyjs.com/images/john.jpg"
+                  >
+                  </v-avatar>
+                </v-btn>
+              </template>
+              <v-card>
+                <v-list-item-content class="justify-center">
+                  <div class="mx-auto text-center">
+                    <v-avatar size="68"
+                      >
+                      <img
+                        src="https://cdn.vuetifyjs.com/images/john.jpg"
+                    >
+                    </v-avatar>
+                    <h3 class="mt-3 my-1">Kai Yamada</h3>
+                    <p class="text-caption mt-1">
+                      gpioblink@gmail.com
+                    </p>
+                    <v-divider class="my-3"></v-divider>
+                    <v-btn
+                      depressed
+                      rounded
+                      text
+                    >
+                      アカウント連携設定
+                    </v-btn>
+                    <v-divider class="my-3"></v-divider>
+                    <v-btn
+                      depressed
+                      rounded
+                      text
+                    >
+                      ログアウト
+                    </v-btn>
+                  </div>
+                </v-list-item-content>
+              </v-card>
+            </v-menu>
     </v-toolbar>
 </template>
   
