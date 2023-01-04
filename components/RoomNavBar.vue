@@ -17,16 +17,13 @@
             </template>
 
             <v-list>
-              <v-list-item>
-                <v-list-item-title>共有するカレンダーの設定</v-list-item-title>
-              </v-list-item>
-              <v-list-item>
+              <v-list-item link>
                 <v-list-item-title>ルームに招待</v-list-item-title>
               </v-list-item>
-              <v-list-item>
+              <v-list-item link>
                 <v-list-item-title>管理者向け設定</v-list-item-title>
               </v-list-item>
-              <v-list-item>
+              <v-list-item link>
                 <v-list-item-title>このルームから退出</v-list-item-title>
               </v-list-item>
             </v-list>
