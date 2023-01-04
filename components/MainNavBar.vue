@@ -44,7 +44,6 @@
                     <v-divider class="my-3"></v-divider>
                     <v-btn
                       depressed
-                      rounded
                       text
                     >
                       アカウント連携設定
@@ -52,7 +51,13 @@
                     <v-divider class="my-3"></v-divider>
                     <v-btn
                       depressed
-                      rounded
+                      text
+                    >
+                      ユーザー設定
+                    </v-btn>
+                    <v-divider class="my-3"></v-divider>
+                    <v-btn
+                      depressed
                       text
                     >
                       ログアウト
