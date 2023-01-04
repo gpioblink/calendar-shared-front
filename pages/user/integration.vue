@@ -3,11 +3,8 @@
       <v-col cols="12">
         <v-card>
           <v-card-title>アカウント連携設定</v-card-title>
-          <v-card-subtitle>
-            <p>各種カレンダーサービスのアカウントと連携できます。</p>
-          </v-card-subtitle>
           <v-card-text>
-            カレンダーアイコンを押すと予定の調整を開始します。
+            各種カレンダーサービスと連携ができます。
             <v-list two-line>
                 <v-list-item>
                     <v-list-item-icon>
@@ -89,6 +86,12 @@
                     </v-list-item-action>
                 </v-list-item>
              </v-list>
+             <v-divider class="my-4"></v-divider>
+
+             <p>アカウントに関する重要な設定ができます。</p>
+
+             <v-btn outlined color="red">アカウントを削除</v-btn>
+
           </v-card-text>
         </v-card>
       </v-col>
