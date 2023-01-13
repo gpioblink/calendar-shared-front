@@ -1,5 +1,5 @@
 <template>
-    <v-list-item
+    <v-list-item link to="/rooms/000/members/000"
     >
         <v-list-item-avatar>
             <v-icon
