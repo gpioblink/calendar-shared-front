@@ -20,8 +20,8 @@
               <v-list-item link>
                 <v-list-item-title>ルームに招待</v-list-item-title>
               </v-list-item>
-              <v-list-item link>
-                <v-list-item-title>管理者向け設定</v-list-item-title>
+              <v-list-item link to="000/admin/">
+                <v-list-item-title>オーナー向け設定</v-list-item-title>
               </v-list-item>
               <v-list-item link>
                 <v-list-item-title>このルームから退出</v-list-item-title>
